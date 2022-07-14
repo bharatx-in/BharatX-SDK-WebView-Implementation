@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/transaction_amount"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:background="#50808080"
+        android:hint="Amount"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_margin="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/transaction_name"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#50808080"
+        android:hint="Name"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transaction_amount"/>
+
+    <EditText
+        android:id="@+id/transaction_phone"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="12sp"
+        android:background="#50808080"
+        android:hint="Phone"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transaction_name"/>
+
+    <EditText
+        android:id="@+id/transaction_email"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#50808080"
+        android:hint="Email"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp"
+        android:layout_margin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/transaction_phone"/>
+
+    <Button
+        android:id="@+id/transaction_submit"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:background="#50808080"
+        app:layout_constraintTop_toBottomOf="@id/transaction_email"
+        android:layout_marginTop="20dp"
+        android:text="Initiate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <WebView
+        android:id="@+id/transaction_webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
